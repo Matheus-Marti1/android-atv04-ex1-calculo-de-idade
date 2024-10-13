@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Atv4Ex1Idade</string>
+    <string name="nome_aluno">Matheus Augusto Marti</string>
+    <string name="ra_aluno">RA: 1110482313017</string>
+    <string name="idade_titulo">Cálculo de Idade</string>
+    <string name="dia">Insira o dia de nascimento</string>
+    <string name="mes">Insira o mês de nascimento</string>
+    <string name="ano">Insira o ano de nascimento</string>
+    <string name="calcular">Calcular</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomeAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome_aluno"
+        app:layout_constraintBottom_toTopOf="@+id/tvRaAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRaAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/ra_aluno"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="@+id/tvNomeAluno"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeAluno" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/idade_titulo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDia"
+        app:layout_constraintStart_toStartOf="@+id/etDia"
+        app:layout_constraintTop_toBottomOf="@+id/tvRaAluno" />
+
+    <EditText
+        android:id="@+id/etDia"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginBottom="289dp"
+        android:ems="10"
+        android:hint="@string/dia"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/tvIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMes"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="@string/mes"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/etAno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDia" />
+
+    <EditText
+        android:id="@+id/etAno"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="@string/ano"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMes" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="241dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAno" />
+
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="174dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
